@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tv.text = "سلام دنیا!"
+        tv.text ="سلام چترود!"
     }
 }

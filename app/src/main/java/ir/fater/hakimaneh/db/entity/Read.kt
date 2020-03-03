@@ -7,5 +7,6 @@ import androidx.room.PrimaryKey
 data class Read(
     @PrimaryKey(autoGenerate = true)
     var id:Long,
-    var id_hekmat:Long
+    var id_hekmat:Long,
+    var date:Long
 )

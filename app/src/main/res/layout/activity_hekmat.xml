@@ -22,7 +22,7 @@
         android:id="@+id/btn_pre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="بعدی"
+        android:text="قبلی"
         app:layout_constraintBottom_toBottomOf="@+id/tv_matn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_matn" />
@@ -31,7 +31,7 @@
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="قبلی"
+        android:text="بعدی"
         app:layout_constraintBottom_toBottomOf="@+id/tv_matn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_matn" />

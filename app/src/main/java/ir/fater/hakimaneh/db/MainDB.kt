@@ -24,7 +24,9 @@ abstract class MainDB : RoomDatabase() {
                     INSTANCE = Room.databaseBuilder(
                         context.getApplicationContext(),
                         MainDB::class.java, "chapter.db"
-                    ).build()
+                    )
+                        .createFromAsset("databases/db.db")
+                        .build()
                 }
             }
             return INSTANCE

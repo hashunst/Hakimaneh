@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HekmatActivity">
+
+    <TextView
+        android:id="@+id/tv_matn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintStart_toEndOf="@+id/btn_pre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بعدی"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_matn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_matn" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قبلی"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_matn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_matn" />
+
+    <Button
+        android:id="@+id/btn_badan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="بعدا مطالعه می شود"
+        app:layout_constraintEnd_toStartOf="@+id/btn_motalee"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_matn" />
+
+    <Button
+        android:id="@+id/btn_motalee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مطالعه شد"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_badan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_badan"
+        app:layout_constraintTop_toTopOf="@+id/btn_badan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

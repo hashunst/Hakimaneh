@@ -1,15 +1,10 @@
 package ir.fater.hakimaneh
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.room.Dao
-import ir.fater.hakimaneh.db.MainDB
-import ir.fater.hakimaneh.db.entity.Hekmat
-import ir.fater.hakimaneh.db.entity.Khotbe
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
-import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,22 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var hekmat=Hekmat(0,"سلام")
-        var khotbe=Khotbe(0,"علی", Calendar.getInstance().timeInMillis)
+        btn_motale_hekmat.setOnClickListener {
+            startActivity(Intent(this@MainActivity, HekmatActivity::class.java))
+        }
 
-        tv.text =hekmat.matn
-
-
-//        thread {
-//            var hekmat1 = Hekmat(0, "قال الله تعالی")
-//            MainDB.getDatabase(this)?.hekmatDao()?.insert(hekmat1)
-//            var matnHekmat1 = MainDB.getDatabase(this)?.hekmatDao()?.all()?.get(0)?.matn
-//            runOnUiThread {
-//                tv.text = matnHekmat1
-//            }
-//        }
-
-//        tv.text = "سلام دنیا!"
-//        tv.text ="سلام چترود!"
+        btn_amar.setOnClickListener {
+            startActivity(Intent(this@MainActivity, AmarActivity::class.java))
+        }
     }
 }

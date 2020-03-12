@@ -1,5 +1,6 @@
 package ir.fater.hakimaneh.db.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -16,5 +17,8 @@ interface HekmatDao {
 
     @Query("SELECT * FROM hekmat")
     fun all(): List<Hekmat>
+
+    @Query("SELECT * FROM hekmat")
+    fun alll() : LiveData<List<Hekmat>>
 
 }

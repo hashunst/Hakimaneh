@@ -1,2 +1,3 @@
-include ':app'
+include ':app', ':simpleextentions'
 rootProject.name='Hakimaneh'
+project(':simpleextentions').projectDir = new File(settingsDir, '../common/simpleextentions')

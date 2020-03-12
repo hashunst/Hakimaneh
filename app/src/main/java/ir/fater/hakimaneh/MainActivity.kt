@@ -19,5 +19,7 @@ class MainActivity : AppCompatActivity() {
         btn_amar.setOnClickListener {
             startActivity(Intent(this@MainActivity, AmarActivity::class.java))
         }
+
+
     }
 }
